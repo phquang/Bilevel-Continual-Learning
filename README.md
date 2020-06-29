@@ -5,6 +5,7 @@ This project contains the implementation of the paper: Bilevel Continual Learnin
 # Requirements
 - Pytorch 1.5.0
 - CUDA 10.2
+
 All experiments in this work was run on a single K80 GPU with 12Gb memory.
 
 # Benchmarks
