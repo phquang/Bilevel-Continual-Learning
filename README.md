@@ -27,19 +27,19 @@ The provided script `scripts/run.sh` includes the best hyper-parameter cross-val
 | Parameter           | Description                                                  | Values |
 | :------------------ | :----------------------------------------------------------- | :-------------------------------------------------------- |
 | **data_path** | path where the data will be saved | e.g. data/ |
-| **data_file** | name of the data file | e.g. mnist_permutations.pt |
-| **use** | randomly use a subset of data. When `use < 1`, `use%` of the original data, when `use > 1`, select `use` samples from the data | e.g. 0.5 (select 50% of data), 1000 (select 1000 data samples) |
-|**n_memories**| number of data stored per task | e.g. 65 |
-|**memory_strength**| value of the regularizer's coefficient | e.g. 100 |
-|**temperature**| temperature of the softmax in knowledge distillation | e.g. 5|
-|**lr**| (inner) learning rate | e.g. 0.1 |
-|**beta**| outer learning rate (BCL) | e.g. 0.3 |
-|**adapt**|  use adaptation at test time or not | e.g. no | 
-|**adapt_lr**| learning rate of the adaptation step | e.g. 0.001 | 
-|**inner_steps**| number of SGD udpates per samples | e.g. 2 | 
-|**n_meta**| number of meta update per samples | e.g. 2 |
-|**n_val**| percentage of the total memory used for the evaluation set (BCL-Dual) | e.g. 0.2 | 
-|**replay_batch_size**| number of data in the memory used per experience replay step | e.g. 64 | 
+| **data_file** | name of the data file | e.g. `mnist_permutations.pt` |
+| **use** | randomly use a subset of data. When `use < 1`, `use%` of the original data, when `use > 1`, select `use` samples from the data | e.g. `0.5` (select 50% of data), `1000` (select 1000 data samples) |
+|**n_memories**| number of data stored per task | e.g. `65` |
+|**memory_strength**| value of the regularizer's coefficient | e.g. `100` |
+|**temperature**| temperature of the softmax in knowledge distillation | e.g. `5`|
+|**lr**| (inner) learning rate | e.g. `0.1` |
+|**beta**| outer learning rate (BCL) | e.g. `0.3` |
+|**adapt**|  use adaptation at test time or not | e.g. `no` | 
+|**adapt_lr**| learning rate of the adaptation step | e.g. `0.001` | 
+|**inner_steps**| number of SGD udpates per samples | e.g. `2` | 
+|**n_meta**| number of meta update per samples | e.g. `2` |
+|**n_val**| percentage of the total memory used for the evaluation set (BCL-Dual) | e.g. `0.2` | 
+|**replay_batch_size**| number of data in the memory used per experience replay step | e.g. `64` | 
 
 # Acknowledgement
 This project structure is based on the [GEM](https://github.com/facebookresearch/GradientEpisodicMemory) repository with additional methods, metrics and implementation improvements. 
