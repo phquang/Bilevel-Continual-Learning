@@ -26,7 +26,7 @@ The provided script `scripts/run.sh` includes the best hyper-parameter cross-val
 
 | Parameter           | Description                                                  | Values |
 | :------------------ | :----------------------------------------------------------- | :-------------------------------------------------------- |
-| **data_path** | path where the data will be saved | e.g. data/ |
+| **data_path** | path where the data will be saved | e.g. `data/` |
 | **data_file** | name of the data file | e.g. `mnist_permutations.pt` |
 | **use** | randomly use a subset of data. When `use < 1`, `use%` of the original data, when `use > 1`, select `use` samples from the data | e.g. `0.5` (select 50% of data), `1000` (select 1000 data samples) |
 |**n_memories**| number of data stored per task | e.g. `65` |
