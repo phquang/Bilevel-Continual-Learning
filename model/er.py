@@ -31,7 +31,7 @@ class Net(torch.nn.Module):
             self.net = ResNet18Full(args.pretrained, n_outputs)
         else:
             #self.net = MLP([n_inputs] + [nh] * nl + [n_outputs])
-            self.net = MLP([784] + [400]*2 + [10])
+            self.net = MLP([784] + [128]*3 + [10])
             if args.data_file == 'notMNIST.pt':
                 self.is_cifar = True
         # setup optimizer
