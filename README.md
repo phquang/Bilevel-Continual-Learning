@@ -1,6 +1,10 @@
 # Bilevel Continual Learning
 
-This project contains the implementation of the paper: Bilevel Continual Learning (arXiv).
+This project contains the implementation of the paper: Bilevel Continual Learning (arXiv). 
+A dual memory management strategy: a replay memory and an evaluation set. The model learns new samples by experience replay with the replay memory such that in can generalize to the evaluation set.
+
+# Cite
+
 
 # Requirements
 - Pytorch 1.5.0
@@ -46,5 +50,3 @@ The provided script `scripts/run.sh` includes the best hyper-parameter cross-val
 # Acknowledgement
 This project structure is based on the [GEM](https://github.com/facebookresearch/GradientEpisodicMemory) repository with additional methods, metrics and implementation improvements. 
 * https://github.com/facebookresearch/GradientEpisodicMemory
-
-# Cite
